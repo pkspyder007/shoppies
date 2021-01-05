@@ -1,5 +1,7 @@
 # The Shoppies
 [![Netlify Status](https://api.netlify.com/api/v1/badges/185c62ed-2440-4d3d-81d7-f3a9e2986da3/deploy-status)](http://shopifynominees.netlify.app/)
+
+
 Visit by clicking the badge above
 
 ##### Technologies Used
@@ -21,10 +23,10 @@ HomePage
 ![Landing Screen](./imgs/landing.PNG)
 
 Search Result and Nominations
-![Landing Screen](./imgs/Search.PNG)
+![Search Screen](./imgs/Search.PNG)
 
 WebShare API
-![Landing Screen](./imgs/share.jpeg)
+![Share Screen](./imgs/share.jpeg)
 
 
 **KEEP learning!**
