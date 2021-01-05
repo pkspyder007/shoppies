@@ -21,15 +21,16 @@ export default function Results() {
   }
 
   return (
-    <div className="results_container">
+    searchResults.length ? <div className="results_container">
       <h2>Results for " {searchTerm} "</h2>
       <hr/>
       <ul>
         {searchResults.map((movie) => {
           return (
             <li key={movie.imdbID}>
+              <img src={movie.Poster} alt={movie.Title} className="poster" />
               <strong>
-              {movie.Title}{" "} ( {movie.Year} )
+              {movie.Title}{" "} ({movie.Year})
               </strong>
               <span>
                 <button
@@ -45,5 +46,6 @@ export default function Results() {
         })}
       </ul>
     </div>
+    : ""
   );
 }

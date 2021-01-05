@@ -21,7 +21,7 @@ export default function ShareButton() {
         }
     }
     return (
-        <div>
+        <div className="share">
           <button className="btn_primary" onClick={handleShare}>Share this link with your friends</button>  
         </div>
     )

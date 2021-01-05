@@ -23,7 +23,7 @@ export default function Nominees() {
             return (
               <CSSTransition key={n.imdbID} timeout={500} classNames="item">
                 <li key={n.imdbID}>
-                  <LI title={n.Title} remove={() => handleRemove(n.imdbID)} />
+                  <LI title={n.Title} poster={n.Poster} remove={() => handleRemove(n.imdbID)} />
                 </li>
               </CSSTransition>
             );
@@ -34,9 +34,10 @@ export default function Nominees() {
   );
 }
 
-function LI({ title, remove }) {
+function LI({ title, remove, poster }) {
   return (
       <>
+        <img className="poster" src={poster} alt={title} />
         <p>{title}</p>
         <span>
           <button className="btn_danger" onClick={remove}>
