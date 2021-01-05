@@ -6,12 +6,12 @@ export default function ShareButton() {
             await navigator.share({
                 title: 'The Shoppies Nominations',
                 text: "Vote Your favorite movies in the biggest award function.",
-                url: 'https://theshoppies.netlify.app' 
+                url: 'https://shopifynominees.netlify.app/' 
             }); 
             alert("Thanks your inviting your friends.");
         } catch (error) {
             try {
-                await navigator.clipboard.writeText('https://theshoppies.netlify.app')
+                await navigator.clipboard.writeText('https://shopifynominees.netlify.app/')
                 alert("Link copied to clipboard.");
             } catch (err) {
                 alert("Your browser doesn't support sharing feature and clipboard copying. Please manually share the link.");
