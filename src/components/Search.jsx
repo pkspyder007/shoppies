@@ -28,7 +28,7 @@ export default function Search() {
     dispatch({ type: "TOGGLE_LOADING", payload: true });
 
     // Fetch list of movies
-    const query = `http://omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${term}&type=movie`;
+    const query = `https://omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${term}&type=movie`;
     axios
       .get(query)
       .then(({ data }) => {
